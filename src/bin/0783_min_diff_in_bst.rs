@@ -8,7 +8,7 @@ struct Solution;
 impl Solution {
     fn traverse(root: Option<Rc<RefCell<TreeNode>>>, vals: &mut Vec<i32>) {
         if let Some(node) = root {
-            // the following order is import to get the values of the BST sorted
+            // the following order is important to get the values of the BST sorted
             Self::traverse(node.borrow().left.clone(), vals);
             vals.push(node.borrow().val);
             Self::traverse(node.borrow().right.clone(), vals);

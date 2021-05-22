@@ -36,7 +36,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_two_sum() {
+    fn test_solution() {
         assert_eq!(Solution::is_valid(String::from("()")), true);
         assert_eq!(Solution::is_valid(String::from("()[]{}")), true);
         assert_eq!(Solution::is_valid(String::from("(]")), false);

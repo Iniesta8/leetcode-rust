@@ -6,7 +6,9 @@ impl Solution {
     }
 }
 
-fn main() {}
+fn main() {
+    let res = Solution::num_water_bottles(32, 5);
+}
 
 #[cfg(test)]
 mod tests {
